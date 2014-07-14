@@ -12,9 +12,10 @@ Gem::Specification.new do |s|
   s.homepage    = "http://github.com/gokuu/mkv"
   s.summary     = "Reads MKV info."
   s.description = "Simple wrapper around MKVToolNix's mkvinfo utility to get data from MKV movies, and mkvextract to extract subtitles."
-  
+
+  s.add_dependency("awesome_print", "~> 1.2")
   s.add_development_dependency("rspec", "~> 2.7")
-  s.add_development_dependency("rake", "~> 0.9.2")
+  s.add_development_dependency("rake", "~> 0.9", ">= 0.9.2")
 
   s.files        = Dir.glob("lib/**/*") + %w(README.md LICENSE CHANGELOG)
 end
